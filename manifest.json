@@ -1,0 +1,30 @@
+{
+  "name": "Virtual Wardrobe",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "An extension that creates a virtual wardrobe for the user and suggests outfit combinations based on the weather and occasion.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": [
+    "geolocation",
+    "https://api.openweathermap.org/*"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*/*", "http://*/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "browser_action": {
+    "default_title": "Virtual Wardrobe",
+    "default_popup": "popup.html"
+  }
+}
