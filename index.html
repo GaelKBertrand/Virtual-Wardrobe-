@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Virtual Wardrobe</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>Virtual Wardrobe</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
     <h1>Virtual Wardrobe</h1>
-    <div id="weather-container">
-      <p id="weather"></p>
-    </div>
-    <div id="outfit-container">
-      <p id="outfit"></p>
-    </div>
-    <div id="customize-container">
-      <input type="text" id="item" placeholder="Enter item to replace">
-      <input type="text" id="accessory" placeholder="Enter accessory to add">
-      <button id="customize">Customize</button>
-    </div>
-    <div id="share-container">
-      <button id="share">Share</button>
-    </div>
-    <div id="occasion-container">
+    <p>Enter an occasion to get an outfit suggestion:</p>
+    <div class="form-group">
       <label for="occasion">Occasion:</label>
-      <select id="occasion">
-        <option value="work">Work</option>
-        <option value="party">Party</option>
-        <option value="casual">Casual</option>
-      </select>
+      <input type="text" id="occasion" placeholder="e.g. work, party, casual">
     </div>
-    <script src="script.js"></script>
-  </body>
+    <div class="form-group">
+      <label for="item">Swap out an item:</label>
+      <input type="text" id="item" placeholder="e.g. sweater, jeans, pumps">
+    </div>
+    <div class="form-group">
+      <label for="accessory">Add an accessory:</label>
+      <input type="text" id="accessory" placeholder="e.g. scarf, hat, sunglasses">
+    </div>
+    <button id="customize">Customize outfit</button>
+    <button id="share">Share outfit</button>
+    <div class="outfit-container">
+      <p id="weather">Current weather: </p>
+      <p id="outfit">Outfit suggestion: </p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
 </html>
