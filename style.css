@@ -1,0 +1,52 @@
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+form label, form input, form select, form button {
+  margin: 10px;
+}
+
+form select, form input[type="text"] {
+  flex-basis: 48%;
+}
+
+form button {
+  flex-basis: 100%;
+}
+
+.wardrobe, .outfit-suggestions {
+  margin-top: 20px;
+}
+
+.items, .outfits {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item, .outfit {
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+.item img, .outfit img {
+  max-width: 100%;
+  height: auto;
+}
+
+.item p, .outfit p {
+  text-align: center;
+}
