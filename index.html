@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Virtual Wardrobe</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Virtual Wardrobe</h1>
+      <form>
+        <label for="category-select">Select category:</label>
+        <select id="category-select" name="category">
+          <option value="tops">Tops</option>
+          <option value="bottoms">Bottoms</option>
+          <option value="shoes">Shoes</option>
+          <option value="accessories">Accessories</option>
+        </select>
+        <input type="text" id="item-name" name="item-name" placeholder="Item name">
+        <input type="text" id="color" name="color" placeholder="Color">
+        <input type="text" id="image-url" name="image-url" placeholder="Image URL">
+        <button type="submit">Add item</button>
+      </form>
+      <div class="wardrobe">
+        <h2>My Wardrobe</h2>
+        <div class="items">
+          <!-- Wardrobe items will be displayed here -->
+        </div>
+      </div>
+      <div class="outfit-suggestions">
+        <h2>Outfit Suggestions</h2>
+        <div class="outfits">
+          <!-- Outfit suggestions will be displayed here -->
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
